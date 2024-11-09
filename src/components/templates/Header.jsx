@@ -9,8 +9,8 @@ const Header = ({ data }) => {
           data.backdrop_path || data.profile_path
         })`,
         backgroundPosition: "top 10%",
-        backgroundSize: "cover",
-        backgroundRepeat : "no-repeat",
+        backgroundSize: "cover",/* */
+        backgroundRepeat: "no-repeat",
       }}
       className="w-full h-[50vh] flex flex-col items-start justify-end p-[5%]"
     >
@@ -30,9 +30,11 @@ const Header = ({ data }) => {
         {data.media_type.toUpperCase()}
       </p>
 
-      <Link className="bg-[#6556CD] p-5 mt-5 rounded text-white">Watch Trailer</Link>
+      <Link className="bg-[#6556CD] p-5 mt-5 rounded text-white">
+        Watch Trailer
+      </Link>
     </div>
   );
 };
- 
+
 export default Header;
