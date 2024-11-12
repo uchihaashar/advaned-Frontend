@@ -15,6 +15,8 @@ const Popular = () => {
   const [page , setPage] = useState(1)
   const [hasMore, sethasMore] = useState(true)
 
+  document.title = "AMP | Popular " + category ;
+
   const GetPopular = async () => {
     try {
      const { data } = await axios.get(`${category}/popular?page=${page}`);

@@ -28,11 +28,15 @@ const SideNav = () => {
           <i className="mt-2 mr-2 ri-magic-fill"></i>
           Popular
         </Link>
-        <Link className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-5">
+        <Link 
+        to="/movie"
+        className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-5">
           <i className="mt-2 mr-2 ri-movie-2-fill"></i>
           Movies
         </Link>
-        <Link className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-5">
+        <Link 
+        to="/tv"
+        className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-5">
           <i className="mt-2 mr-2 ri-tv-2-fill"></i>
           TV Shows
         </Link>
